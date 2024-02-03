@@ -14,6 +14,7 @@ const Form = (props) => {
     const save = (event) => {
         event.preventDefault()
         props.onChange({name,description,image,team})
+        alert("Personagem criado com sucesso!")
     }
 
     return (
@@ -24,7 +25,7 @@ const Form = (props) => {
                 <TextField 
                     type="text"
                     title="Nome" 
-                    placeholder="Digite o seu nome" 
+                    placeholder="Digite o nome" 
                     required={true} 
                     value={name} 
                     onChange={value => setName(value)} 
@@ -42,7 +43,7 @@ const Form = (props) => {
                 <TextField 
                     type={"url"}
                     title="Imagem" 
-                    placeholder="Informe o endereço da imagem" 
+                    placeholder="Informe a URL da imagem" 
                     required={true}  
                     value={image} 
                     pattern="https?://.+"
