@@ -1,0 +1,33 @@
+.team { 
+    text-align: center;
+    padding: 32px;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+}
+
+.team h3 {
+    font-size: 32px;
+    border-bottom: 4px solid;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.team .collaborators {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media(max-width: 600px) {
+
+    .team .collaborators {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+}
